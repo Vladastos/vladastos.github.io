@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mappa.png">
+    <script src="todolist.js"></script>
+    <title>Kompagno - To do list</title>
+</head>
+<body id="body" class="darkMode">
+    <header>
+        <nav id="barraMenu">
+            <div class="iconaMenu"><i id="pulsanteMenu" class="material-icons ">menu</i></div>
+            <hr>
+            <div><a href="index.html"><i class = "material-icons">home</i><span class="descrizioneMenu">Home</span></a></div>
+            <hr>
+            <div><a href="pomodoro.html"><i class = "material-icons">alarm</i><span class="descrizioneMenu">Pomidor</span></a></div>
+            <hr>
+            <div class="selezionato"><a href="todolist.html"><i class = "material-icons">checklist</i><span class="descrizioneMenu">To do list</span></a></div>
+            <hr>
+            <div><a href="#" id="help"><i class = "material-icons">sos</i><span class="descrizioneMenu">Richiedi aiuto</span></a></div>
+            <hr>
+        </nav>
+    </header>
+
+    <div id="overlay" class="overlay">
+        <div class="flexColumn">
+            <div class="flexRow">
+                <div class="surface3 overlayContent" id="overlayWindow">
+                    <figure>
+                        <img id="immagineOverlay" src="animalicoccolosi/cat_1.png" alt="">
+                        <figcaption id="overlayCaption"></figcaption>
+                    </figure>
+                    <p id="messaggioOverlay"></p>
+                    <input id="closeOverlay" type="button" class="button" value="ok">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <i id="toggleThemeButton" class="material-icons">light_mode</i>
+        <div class="flexRow"><img class="logo" src="logo.png" alt="Logo Kompagno"></div>
+        <h1 class="centeredText">To do list</h1>
+        <div class="surface1">
+            <div class="flexRow">
+                <form autocomplete="off" id="inputForm">
+                    <input type="text" class="in margin-20" name ="inputText" id="inputText" required>
+                    <input type="submit" class="button margin-20 margin-sides todoButton" value="+" name="inputButton" id="inputButton">
+                </form>
+            </div>
+            <div class="flexRow">
+                <div class="listOut surface2">
+                    <ul id="outputList">
+                    </ul>
+                    <span id="outputSpan"></span>
+                    <input type="button" class="button" value="Clear" id="clearButton">
+                </div>
+            </div>
+        </div>
+		
+    </main>
+</body>
+</html>

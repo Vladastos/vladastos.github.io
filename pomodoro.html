@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mappa.png">
+    <script src="pomodoro.js"></script>
+    <title>Kompagno - Pomidor</title>
+</head>
+<body id="body" class="darkMode">
+    <header>
+        <nav id="barraMenu">
+            <div class="iconaMenu"><i id="pulsanteMenu" class="material-icons ">menu</i></div>
+            <hr>
+            <div><a href="index.html"><i class = "material-icons">home</i><span class="descrizioneMenu">Home</span></a></div>
+            <hr>
+            <div class="selezionato"><a href="pomodoro.html"><i class = "material-icons">alarm</i><span class="descrizioneMenu">Pomidor</span></a></div>
+            <hr>
+            <div><a href="todolist.html"><i class = "material-icons">checklist</i><span class="descrizioneMenu">To do list</span></a></div>
+            <hr>
+            <div><a href="#" id="help"><i class = "material-icons">sos</i><span class="descrizioneMenu">Richiedi aiuto</span></a></div>
+            <hr>
+
+        </nav>
+    </header>
+
+    <div id="overlay" class="overlay">
+        <div class="flexColumn">
+            <div class="flexRow">
+                <div class="surface3 overlayContent" id="overlayWindow">
+                    <figure>
+                        <img id="immagineOverlay" src="animalicoccolosi/cat_1.png" alt="">
+                        <figcaption id="overlayCaption"></figcaption>
+                    </figure>
+                    <p id="messaggioOverlay"></p>
+                    <input id="closeOverlay" type="button" class="button" value="ok">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <i id="toggleThemeButton" class="material-icons">light_mode</i>
+        <div class="flexRow"><img src="logo.png" alt="" class="logo"></div>
+        <h1 class="centeredText">Pomidor</h1>
+        <div class="surface1" id="pomodoro">
+            <div >
+                <div class="flexRow">
+                    <div class = "out " id="stateOut">Lavoro</div>
+                </div>
+                <div class="flexRow">
+                    <div class = "surface2 mainOut" id="countdownOut">0 : 00</div>
+                </div>
+                <div class="flexRow">
+                    <input type="range" min="1" max="100" value="50" id="volumeAllarme">
+                </div>
+                <div class="flexRow margin-20">
+                    <input class = "surface1 button " type="button" id="timerPause" value="Vai" >
+                </div>
+                <hr>
+                
+                <div class="flexRow margin-20">
+                    <div class = "out margin-sides" id = "minutiLavoroOut">Minuti lavoro : 0</div>
+                    <div class 	= "out margin-sides" id = "minutiRiposoOut">Minuti riposo : 0</div>
+                </div>
+                    <form id="impostaTimer" >
+                        <div class="flexRow margin-20">
+                            <input class = "in margin-sides " type="number" min ="1" max="99" step ="1" id="lavoroIn" placeholder="Lavoro" required>
+                            <input class = "in margin-sides" type="number" min ="1" max="99" step ="1" id="riposoIn" placeholder="Riposo" required>
+                        </div>
+                        <div class="flexRow margin-20">
+                            <input class = "surface1 button " type="submit" value="Imposta Timer">
+                        </div>
+                    </form>
+                
+            </div>
+        </div>
+        <div class="textContainer">
+            <h2>Cos'è Pomidor?</h2>
+            <p>Pomidor è un timer personalizzabile che ti permette di organizzare al meglio il tuo tempo. 
+                Lo scopo di questa applicazione è quello di aiutarti a concentrarti nel tuo lavoro, qualunque esso sia.
+            </p>
+            <p>
+                Pomidor è ottimizzato per la tecnica del <a href="https://it.wikipedia.org/wiki/Tecnica_del_pomodoro">pomodoro</a>, un metodo per la gestione del tempo sviluppato da Francesco Cirillo.
+                La tecnica consiste nella suddivisione del tempo in intervalli (tradizionalmente da 25 minuti) separati da brevi pause (solitamente 5 minuti)
+
+            </p>
+        </div>
+        <div class="textContainer">
+            <h2>Come Usarlo?</h2>
+            <p>I sei passaggi della tecnica originale sono i seguenti:</p>
+            <ol>
+                <li>Si decidono le attività da svolgere </li>
+                <li>Si imposta il timer (25 minuti lavoro, 5 minuti riposo)</li>
+                <li>Si lavora sull'attività scelta (senza interruzioni)</li>
+                <li>Si termina il lavoro quando suona il timer e viene messo un segno di spunta su un foglio di carta</li>
+                <li>Se si hanno meno di quattro segni di spunta, si fa una breve pausa di 5 minuti</li>
+                <li>Dopo quattro cicli si può fare una pausa più lunga(15-30 minuti) e ricominciare dal punto 1</li>
+            </ol>
+            <br>
+            <p>
+                Il Pomidor incoraggia la personalizzazione della durata delle varie fasi, ad esempio
+            </p>
+            <ul>
+                <li>Regolare la durata della fase lavoro in base alla complessità dei compiti da svolgere</li>
+                <li>Accorciare la fase di lavoro con l'aumentare della stanchezza</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

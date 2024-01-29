@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mappa.png">
+    <script src="index.js"></script>
+    <title>Kompagno - Home</title>
+</head>
+<body id="body" class="darkMode">
+    <header>
+
+        <!--Menu-->
+        <nav id="barraMenu">
+            <div class="iconaMenu"><i id="pulsanteMenu" class="material-icons ">menu</i></div>
+            <hr>
+            <div class="selezionato"><a href="index.html"><i class = "material-icons">home</i><span class="descrizioneMenu">Home</span></a></div>
+            <hr>
+            <div><a href="pomodoro.html"><i class = "material-icons">alarm</i><span class="descrizioneMenu">Pomidor</span></a></div>
+            <hr>
+            <div><a href="todolist.html"><i class = "material-icons">checklist</i><span class="descrizioneMenu">To do list</span></a></div>
+            <hr>
+            <div><a href="#" id="help"><i class = "material-icons">sos</i><span class="descrizioneMenu">Richiedi aiuto</span></a></div>
+            <hr>
+        </nav>
+    </header>
+
+    <!--Overlay-->
+    <div id="overlay" class="overlay">
+        <div class="flexColumn">
+            <div class="flexRow">
+                <div class="surface3" id="overlayWindow">
+                    <div class="flexRow">
+                        <figure>
+                            <img id="immagineOverlay" src="animalicoccolosi/cat_1.png" alt="">
+                            <figcaption id="overlayCaption"></figcaption>
+                        </figure>
+                    </div>
+                    <p class="centeredText" id="messaggioOverlay"></p>
+                    <input id="closeOverlay" type="button" class="button" value="ok">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Freccia-->
+    <div id="freccia-wrapper" class="flexRow">
+        <a href="#scrollto" id ="freccia" class="material-icons">keyboard_arrow_down</a>
+    </div>
+
+    <main id="main" class="indexMain">
+        <i id="toggleThemeButton" class="material-icons">light_mode</i>
+        <img id="indexBackground" src="abbandono.jpg" alt="Edificio Abbandonato">
+        <div class="logoMain flexColumn">
+            <img id="KOMPAGNO" class="marginAuto flexRow" src="logo.png" alt="Kompagno">
+        </div>
+        <div id="scrollto" class="surface1 textContainer margin-20">
+            <h2>Kompagno</h2>
+            <p class="sottotitolo">Soffri in compagnia</p>
+            <p>La vita è dolore, l'esistenza è inutile e il libero arbitrio è una truffa</p>
+            <p>Kompagno è un'applicazione web nata con lo scopo di rendere la tua sofferenza più sopportabile aiutandoti a organizzare il tuo tempo e offrendoti supporto morale quando ti trovi in difficoltà.</p>
+        </div>
+        <div class="surface1 textContainer margin-20">
+            <h2>Funzionalità</h2>
+            <h3>Pomidor</h3>
+            <p>Timer personalizzabile ispirato alla tecnica del Pomodoro . Soffri a piccoli intervalli</p>
+            <h3>To do list</h3>
+            <p>Strumento agenda che ti permette di organizzare il tuo dolore. </p>
+            <h3>Aiuto</h3>
+            <p>Supporto morale per aiutarti a sopportare la tristezza del mondo che ti circonda.</p>
+            <p>Disponibile anche il tema chiaro (pulsante in alto a destra)</p>
+        </div>
+        
+        
+    </main>
+</body>
+</html>
