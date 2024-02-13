@@ -107,7 +107,7 @@ main hr{
     position:absolute;
     top:90vh;
     z-index: 2;
-    width:100vw;
+    width:100%;
 }
 #freccia{
     animation-timing-function: ease-in-out;
