@@ -4,21 +4,7 @@
     <!-- Page content here -->
     <div class="w-full flex p-3">
       <label for="menu-drawer" class="btn btn-circle drawer-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-        <!-- TODO Icon refactor -->
+        <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
       </label>
       <h1 class="text-4xl p-1 font-bold text-white">Vladastos</h1>
     </div>
@@ -31,28 +17,12 @@
       class="drawer-overlay"
     ></label>
     <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-      <!-- Sidebar content here -->
-      <li class="w-full">
-        <label for="menu-drawer"
-          ><a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg> </a
-        ></label>
-      </li>
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+      <label for="menu-drawer">
+        <li>
+          <a><fa-icon [icon]="['fas', 'close']" size="lg"></fa-icon></a>
+        </li>
+      </label>
+      <app-sidebar></app-sidebar>
     </ul>
   </div>
 </div>
