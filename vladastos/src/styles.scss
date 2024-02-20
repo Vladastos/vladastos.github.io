@@ -7,3 +7,10 @@
 html:has(.drawer-toggle:checked) {
   scrollbar-gutter: auto;
 }
+
+app-home {
+  //TODO improve this
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}

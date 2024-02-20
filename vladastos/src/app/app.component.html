@@ -2,13 +2,15 @@
   <input id="menu-drawer" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
     <!-- Page content -->
-    <div class="w-full flex p-3">
-      <label for="menu-drawer" class="btn btn-circle drawer-button">
-        <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
-      </label>
-      <h1 class="text-4xl px-5 font-bold text-white">Prova</h1>
+    <div class="w-full flex flex-col min-h-screen">
+      <div class="w-full flex p-3">
+        <label for="menu-drawer" class="btn btn-circle drawer-button">
+          <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
+        </label>
+        <h1 class="text-4xl px-5 font-bold text-white">Prova</h1>
+      </div>
+      <router-outlet class="flex-gr" />
     </div>
-    <router-outlet />
   </div>
   <div class="drawer-side">
     <label

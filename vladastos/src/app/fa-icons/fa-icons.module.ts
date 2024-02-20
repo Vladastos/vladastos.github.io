@@ -4,7 +4,12 @@ import {
   FaIconLibrary,
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
-import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faBook,
+  faClose,
+  faHome,
+} from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [],
@@ -13,6 +18,6 @@ import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 })
 export class FaIconsModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faBars, faClose);
+    library.addIcons(faBars, faClose, faBook, faHome);
   }
 }
