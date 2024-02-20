@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+//Fixes scrollbar gutter when drawer is open
+html:has(.drawer-toggle:checked) {
+  scrollbar-gutter: auto;
+}
