@@ -1,12 +1,12 @@
 <div class="drawer">
   <input id="menu-drawer" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
-    <!-- Page content here -->
+    <!-- Page content -->
     <div class="w-full flex p-3">
       <label for="menu-drawer" class="btn btn-circle drawer-button">
         <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
       </label>
-      <h1 class="text-4xl p-1 font-bold text-white">Vladastos</h1>
+      <h1 class="text-4xl px-5 font-bold text-white">Prova</h1>
     </div>
     <router-outlet />
   </div>
@@ -16,13 +16,8 @@
       aria-label="close sidebar"
       class="drawer-overlay"
     ></label>
-    <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-      <label for="menu-drawer">
-        <li>
-          <a><fa-icon [icon]="['fas', 'close']" size="lg"></fa-icon></a>
-        </li>
-      </label>
+    <div class="min-h-full bg-base-200 w-80 p-4">
       <app-sidebar></app-sidebar>
-    </ul>
+    </div>
   </div>
 </div>
