@@ -3,6 +3,13 @@
     <a class="btn btn-circle"><fa-icon [icon]="['fas', 'close']"></fa-icon></a>
   </label>
 </div>
-<ul class="menu w-full rounded-box">
-  <li><a>Ciao</a></li>
+<ul class="menu w-full rounded-box text-xl">
+  <li>
+    <a routerLink="/home"><fa-icon [icon]="['fas', 'home']"></fa-icon> Home</a>
+  </li>
+  <li>
+    <a routerLink="/todolist"
+      ><fa-icon [icon]="['fas', 'book']"></fa-icon> To Do List</a
+    >
+  </li>
 </ul>

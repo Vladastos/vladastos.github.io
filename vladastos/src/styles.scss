@@ -8,7 +8,8 @@ html:has(.drawer-toggle:checked) {
   scrollbar-gutter: auto;
 }
 
-app-home {
+app-home,
+app-to-do-list {
   //TODO improve this
   flex-grow: 1;
   display: flex;
