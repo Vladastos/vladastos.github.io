@@ -1,7 +1,3 @@
-import {
-  FontAwesomeModule,
-  FaIconLibrary,
-} from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,9 +6,8 @@ import { AppComponent } from './app.component';
 
 import { SidebarModule } from './sidebar/sidebar.module';
 import { FaIconsModule } from './fa-icons/fa-icons.module';
-import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { ToDoListComponent } from './to-do-list/to-do-list.component';
+import { HeaderBarModule } from './header-bar/header-bar.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -22,6 +17,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
     FaIconsModule,
     RouterLink,
     RouterLinkActive,
+    HeaderBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
