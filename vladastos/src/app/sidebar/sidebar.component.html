@@ -1,15 +1,19 @@
-<div class="w-full flex flex-row-reverse menu">
-  <label for="menu-drawer">
-    <a class="btn btn-circle"><fa-icon [icon]="['fas', 'close']"></fa-icon></a>
-  </label>
+<div class="flex flex-col h-screen p-4">
+  <div class="w-full flex flex-row-reverse menu">
+    <label for="menu-drawer">
+      <a class="btn btn-circle"><fa-icon [icon]="['fas', 'close']"></fa-icon></a>
+    </label>
+  </div>
+  <ul class="menu w-full rounded-box text-xl flex-grow">
+    <li>
+      <a routerLink="/home"><fa-icon [icon]="['fas', 'home']"></fa-icon> Home</a>
+    </li>
+    <li>
+      <a routerLink="/todolist"
+        ><fa-icon [icon]="['fas', 'book']"></fa-icon> To Do List</a
+      >
+    </li>
+  </ul>
+
+  <div class="text-center ">Version 0.0.1</div>
 </div>
-<ul class="menu w-full rounded-box text-xl">
-  <li>
-    <a routerLink="/home"><fa-icon [icon]="['fas', 'home']"></fa-icon> Home</a>
-  </li>
-  <li>
-    <a routerLink="/todolist"
-      ><fa-icon [icon]="['fas', 'book']"></fa-icon> To Do List</a
-    >
-  </li>
-</ul>
