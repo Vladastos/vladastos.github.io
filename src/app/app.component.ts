@@ -8,6 +8,6 @@ export class AppComponent implements OnInit {
   title = 'vladastos';
 
   ngOnInit(): void {
-    console.log('app init');
+    console.log('Ciao!');
   }
 }
