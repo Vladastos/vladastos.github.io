@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { SidebarModule } from './sidebar/sidebar.module';
 import { FaIconsModule } from './fa-icons/fa-icons.module';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { HeaderBarModule } from './header-bar/header-bar.module';
 @NgModule({
   declarations: [AppComponent],
@@ -15,8 +15,7 @@ import { HeaderBarModule } from './header-bar/header-bar.module';
     AppRoutingModule,
     SidebarModule,
     FaIconsModule,
-    RouterLink,
-    RouterLinkActive,
+    RouterModule,
     HeaderBarModule,
   ],
   providers: [],
